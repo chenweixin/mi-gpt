@@ -4,6 +4,7 @@ import { getDBInfo, initDB, runWithDB } from "./services/db";
 import { kBannerASCII } from "./utils/string";
 import { Logger } from "./utils/log";
 import { deleteFile } from "./utils/io";
+export { APIServer } from "./api-server";
 
 export type MiGPTConfig = Omit<MyBotConfig, "speaker"> & {
   speaker: Omit<AISpeakerConfig, "name">;
